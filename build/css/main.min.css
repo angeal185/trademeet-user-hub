@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/roboto-light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/roboto-regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/roboto-medium.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+  font-family: 'Roboto';
+}
+
+nav{
+  height: 3rem;
+  background: #03A9F4;
+  box-shadow: 0 0 8px #03A9F4!important;
+  color: #fff;
+}
+
+.preview{
+
+}
+
+.sh-9, .sh-95 {
+  transition: 1s ease
+}
+
+.sh-9:hover {
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  transition: .5s ease
+}
+
+.sh-95:hover {
+  -webkit-transform: scale(.95);
+  transform: scale(.95);
+  transition: .5s ease
+}
+
+.totop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  text-align: center;
+  color: #282c34;
+  font-size: 32px;
+  background: rgb(220 220 220 / 70%);
+  box-shadow: 0 0 6px rgb(0 0 0 / 70%);
+  border-radius: 50%;
+  cursor: pointer
+}
+
+::-webkit-scrollbar {
+  z-index: 30;
+  width: 10px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #282c34;
+  border-left: 1px solid #000
+}
+
+::-webkit-scrollbar-track {
+  background: #000
+}
+
+.cp{
+  cursor: pointer;
+}

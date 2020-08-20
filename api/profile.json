@@ -1,0 +1,49 @@
+{
+  "type": ["developer", "entrepeneur"],
+  "user": {
+    "firstname": "",
+    "lastname": "",
+    "age": "",
+    "gender": "",
+    "country": "",
+    "city": "",
+    "hobbies": ["some", "hobbies"],
+    "biography": ""
+  },
+  "skills": [{
+    "type": "javascript",
+    "years": "100",
+    "level": "expert"
+  },{
+    "type": "nodejs",
+    "years": "1000",
+    "level": "expert"
+  }],
+  "work_history":[{
+    "title": "",
+    "organization": "",
+    "duration": "",
+    "role": ""
+  },{
+    "title": "",
+    "organization": "",
+    "duration": "",
+    "role": ""
+  }],
+  "contact": [{
+    "type": "email 1",
+    "data": "user@email.com"
+  },{
+    "type": "email 2",
+    "data": "user2@email.com"
+  }],
+  "showcase":[{
+    "title": "",
+    "description": "",
+    "link": ""
+  },{
+    "title": "",
+    "description": "",
+    "link": ""
+  }]
+}
