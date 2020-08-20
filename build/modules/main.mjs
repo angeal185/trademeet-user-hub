@@ -121,6 +121,32 @@ tpl = x('div', {class: 'container-fluid'},
         x('pre', res)
       ),
       x('button', {
+        class: 'btn btn-outline-primary',
+        onclick(){
+          fetch('./update', {
+              method: 'POST',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Sec-Fetch-Dest': 'object',
+                'Sec-Fetch-mode': 'cors'
+              },
+              body: JSON.stringify(obj,0,2)
+            }).then(function(res){
+              if (res.status >= 200 && res.status < 300) {
+                return res.json();
+              } else {
+                return Promise.reject(new Error(res.statusText))
+              }
+            }).then(function(data){
+              console.log(data)
+            }).catch(function(err){
+              console.error(err)
+            })
+
+        }
+      }, 'Update'),
+      x('button', {
         class: 'btn btn-outline-primary float-right',
         onclick(){
           utils.download(obj);
